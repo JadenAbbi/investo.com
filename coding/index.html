@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest Helper</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
+</head>
+<center>
+<body style="background-color:darkseagreen">
+    <hr> <input type="search" value="" id="search" onchange="openPage()">
+    <p id="demo1"></p>
+    <button type="button"
+    onclick="document.getElementById('demo1').innerHTML='Biggest gainers, Most expensive stocks, Ultimate stocks to invest into, Unforseen and good stocks'">
+    Click Me </button>
+<br>
+    <script>
+        function openPage(){
+            var x = document.getElementById("search").value;
+            if (x === "Most expensive stocks"){
+                window.open("https://sites.google.com/student.carey.wa.edu.au/most-expensive-stocks/home")
+
+            }
+            if (x === "Biggest gainers"){
+                window.open("https://sites.google.com/student.carey.wa.edu.au/biggest-gainers/home");
+            }
+            if (x === "Ultimate stocks to invest into"){
+                window.open("https://sites.google.com/student.carey.wa.edu.au/ultimatestockstoinvestinto/home");
+            }
+            if (x === "Unforseen and good stocks"){
+                window.open("https://sites.google.com/student.carey.wa.edu.au/unforseen-and-good-stocks/home");
+            }
+        }
+    </script>
+    <hr>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index5.html">Toppers in the stock race</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> 
+      </div>
+      
+   <hr>
+
+<br><br><br><br><br><hr>
+<h1>More Info</h1>
+<p>Special thanks to <a href="https://www.moneycontrol.com/stocksmarketsindia/">Money Controls</a></p>
+    <a href="w3schools.com/howto">w3schools web development</a>
+    <a href="https://www.youtube.com/watch?v=w8DaalJluz8">Web Dev (he helped me with the search bar)</a>
+    <a href="slickcharts.com">Thanks to slick charts for daily info</a>
+</body>
+</center>
+</html>
